@@ -1,5 +1,9 @@
 dist: xenial
 #hey
+install:
+ - sudo apt-get install python
+script: 
+ - echo "shubham"
 deploy:
  - provider: pages
  - skip_cleanup: true
