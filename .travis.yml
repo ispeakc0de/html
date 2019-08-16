@@ -1,0 +1,10 @@
+dist: xenial
+#hey
+deploy:
+ - provider: pages
+ - skip_cleanup: true
+ - github_token: $shubh
+ - keep_history: true
+ - on:
+    branch:
+     - master
