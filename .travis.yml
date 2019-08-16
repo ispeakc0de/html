@@ -1,7 +1,12 @@
 dist: xenial
 #hey
+
 install:
  - sudo apt-get install python
+before_script:
+  - composer self-update -q
+  - if [ -n "$shubh" ]; then composer config github-oauth.github.com ${shubh}; fi;
+  - composer show -i
 script: 
  - echo "shubham"
 deploy:
